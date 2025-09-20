@@ -1,429 +1,571 @@
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-        }
-        html{
-            scroll-behavior: smooth;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        nav{
-            border-bottom: 1px solid black;
-            background-color: blue;
-            position: sticky;
-            top: 0;
-            left: 0;
-            z-index: 100;
-            width: 100%;
-        }
-        .content{
-            width: 1150px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 80px;
-        }
-        .logo img{
-            width: 60px;
-            height: auto;
-            margin-right: 20px;
-        }
-        .brand{
-            font-family: 'nunito';
-            font-size: 40px;
-            font-weight: 700;
-            color: white;
-        }
-        .menu li{
-            list-style: none;
-            display: inline-block;
-            margin-left: 40px;
-        }
-        .menu li a{
-            font-size: 20px;
-            font-weight: 600;
-            color: rgb(255, 255, 255);
-        }
-        .menu li a:hover{
-            color: aqua;
-            transition: 0.5s;
-        }
-        .menu .reg{
-            background: black;
-            padding: 10px 20px;
-            border-radius: 30px;
-            color: white;
-        }
-        .menu .reg:hover{
-            background: aqua;
-            color: white;
-            transition: 0.5s;
-        }
-        main{
-            width: 1150px;
-            margin: auto;
-            padding: 20px 0px;
-            display: flex;
-            height: calc(100vh - 80px);
-        }
-        .line{
-            margin-top: 50px;
-        }
-        .line .tag{
-            font-size: 20px;
-            font-weight: 700;
-            font-family: 'nunito';
-            color: black;
-            margin-bottom: 20px;
-        }
-        .line h2{
-            font-family: 'nunito';
-            font-size: 50px;
-            font-weight: 800;
-            color: aqua;
-            margin-bottom: 20px;
-            line-height: 60px;
-        }
-        .line .deskripsi{
-            margin-bottom: 40px;
-            line-height: 20px;
-        }
-        .more{
-            background: aqua;
-            padding: 14px 17px;
-            border-radius: 30px;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        .more:hover{
-            background: blue;
-            color: white;
-            transition: 0.5s;
-        }
-        #home img{
-            width: 500px;
-            height: auto;
-        }
-        #about{
-            width: 1150px;
-            margin: auto;
-            display: flex;
-            padding: 80px 30px;
-        }
-        #about img{
-            height: 300px;
-            margin-right: 100px;
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            border-right: 5px solid aqua;
-            border-left: 5px solid aqua;
-        }
-        #about img:hover{
-            transform: scale(1.05);
-            transition: 0.5s;
-        }
-        .title{
-            font-size: 20px;
-            font-weight: 700;
-            font-family: 'nunito';
-            color: black;
-            margin-bottom: 20px;
-        }
-        .title2{
-            font-size: 40px;
-            font-weight: 800;
-            font-family: 'nunito';
-            color: aqua;
-            margin-bottom: 20px;
-            line-height: 50px;
-        }
-        .visi-misi p{
-            margin-bottom: 20px;
-            line-height: 20px;
-        }
-        .visi-misi .more{
-            display: inline-block;
-        }
-        #fasilitas{
-            width: 1150px;
-            margin: auto;
-            text-align: center;
-            padding: 40px 0;
-        }
-        #fasilitas .galeri{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .galeri .card{
-            width: 30%;
-            margin: 15px 0;
-        }
-        .galeri .card img{
-            width: 80%;
-            height: 300px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            -webkit-border-radius: 8px;
-            -moz-border-radius: 8px;
-            -ms-border-radius: 8px;
-            -o-border-radius: 8px;
-            border-right: 5px solid aqua;
-            border-left: 5px solid aqua;
-        }
-        .galeri .card p{
-            font-weight: 600;
-            color: blue;
-            margin-top: 10px;
-        }
-        .galeri .card img:hover{
-            transform: scale(1.1);
-            transition: 0.5s;
-        }
-        #kontak{
-            width: 1150px;
-            margin: auto;
-            text-align: center;
-            padding: 40px 0;
-        }
-        #kontak .row{
-            display: flex;
-            justify-content: space-between;
-        }
-        #kontak .row .map{
-            width: 45%;
-            height: 350px;
-        }
-        #kontak .row .pesan{
-            width: 50%;
-            text-align: left;
-        }
-        #kontak .pesan .box{
-            height: 45px;
-            width: 100%;
-            margin-bottom: 15px;
-        }
-        #kontak .pesan input,
-        #kontak .pesan textarea{
-            height: 100%;
-            width: 100%;
-            border: 1px solid aqua;
-            border-radius: 6px;
-            -webkit-border-radius: 6px;
-            -moz-border-radius: 6px;
-            -ms-border-radius: 6px;
-            -o-border-radius: 6px;
-            outline: none;
-            padding: 0 15px;
-            font-size: 17px;
-        }
-        #kontak .pesan .message{
-            height: 100%;
-        }
-        #kontak .pesan textarea{
-            padding: 10px;
-            resize: none;
-        }
-        #kontak .pesan .btn-send button{
-            background: aqua;
-            padding: 14px 20px;
-            font-size: 17px;
-            border-radius: 30px;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-            border: none;
-        }
-        #kontak .pesan .btn-send button:hover{
-            background-color: blue;
-            transition: 0.5s;
-            -webkit-transition: 0.5s;
-            -moz-transition: 0.5s;
-            -ms-transition: 0.5s;
-            -o-transition: 0.5s;
-        }
-        footer{
-            background-color: rgb(38, 38, 98);
-            padding: 20px;
-            text-align: center;
-            margin-top: 70px;
-        }
-        footer .socials{
-            padding: 20px 0 15px;
-        }
-        footer .socials a{
-            margin: 10px;
-            font-size: 25px;
-            color: aqua;
-        }
-        footer .socials a:hover{
-            color: white;
-        }
-        footer .links{
-            margin-bottom: 15px;
-        }
-        footer .links a{
-            color: aqua;
-            padding: 15px;
-            font-weight: 500;
-        }
-        footer .links a:hover{
-            color: white;
-        }
-        footer .credit{
-            font-size: 13px;
-            margin-bottom: 10px;
-            color: aqua;
-        }
-        footer .credit a{
-            font-weight: 700;
-            color: white;
-        }
-        /*mobile*/
-        @media screen and (max-width: 576px){
-            .content{
-                width: 100%;
-                display: block;
-                padding-left: 12px;
-                margin: auto;
-                height: 110px;
-            }
-            .brand{
-                font-size: 45px;
-                margin-bottom: 10px;
-            }
-            .menu{
-                padding-left: 4px;
-            }
-            .menu li{
-                margin-left: 0px;
-                margin-right: 30px;
-            }
-            .menu li a{
-                font-size: 15px;
-            }
-            .menu .reg{
-                padding: 10px 13px;
-                font-size: 9px;
-            }
-            main{
-                width: 100%;
-                display: block;
-                padding: 10px;
-                height: 680px;
-            }
-            .line{
-                padding-bottom: 10px;
-                margin-top: 10px;
-            }
-            .line .tag{
-                font-size: 15px;
-                margin-bottom: 10px;
-            }
-            .line h2{
-                font-size: 40px;
-                line-height: 40px;
-                margin-bottom: 20px;
-            }
-            .line .deskripsi{
-                font-size: 15px;
-                margin-bottom: 20px;
-            }
-            .more{
-                padding: 10px 12px;
-                font-size: 15px;
-            }
-            #home img{
-                width: 100%;
-                height: auto;
-                margin-top: 20px;
-            }
-            #about{
-                width: 100%;
-                display: block;
-                padding: 10px;
-                margin-top: 80px;
-                text-align: center;
-            }
-            #about img{
-                height: 200px;
-                margin: 0 auto 20px;
-            }
-            .title{
-                font-size: 18px;
-            }
-            .title2{
-                font-size: 40px;
-            }
-            .visi-misi p {
-                font-size: 15px;
-                margin-bottom: 10px;
-            }
-            .visi-misi .more{
-                margin-top: 10px;
-                font-size: 15px;
-                padding: 12px 15px;
-            }
-            #fasilitas{
-                width: 100%;
-                margin-top: 70px;
-                padding: 10px;
-            }
-            #fasilitas .title{
-                margin-bottom: 10px;
-            }
-            .galeri .card{
-                width: 50%;
-            }
-            .galeri .crad img{
-                height: 100px;
-            }
-            .galeri .card p{
-                font-size: 15px;
-            }
-            #kontak{
-                width: 100%;
-                padding: 10x;
-                margin-top: 50px;
-            }
-            .title{
-                margin-bottom: 10px;
-            }
-            #kontak .row{
-                display: block;
-                width: 100%;
-            }
-            #kontak .row .map{
-                width: 100%;
-            }
-            #kontak .row .pesan{
-                width: 100%;
-                text-align: center;
-                margin-top: 20px;
-            }
-            #kontak .pesan .box{
-                height: 35px;
-                margin-bottom: 10px;
-            }
-            #kontak .pesan input,
-            #kontak .pesan textarea{
-                font-size: 15px;
-            }
-            #kontak .pesan .message{
-                height: 100px;
-            }
-            #kontak .pesan .btn-send button{
-                font-size: 15px;
-                padding: 12px 20px;
-            }
-            footer .links a{
-                font-size: 15px;
-            }
-        }
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  border-bottom: 1px solid black;
+  background-color: blue;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+}
+.content {
+  width: 1150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.logo img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+.brand {
+  font-family: "nunito";
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+.menu li a {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.menu li a:hover {
+  color: aqua;
+  transition: 0.5s;
+}
+.menu .reg {
+  background: black;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+}
+.menu .reg:hover {
+  background: aqua;
+  color: white;
+  transition: 0.5s;
+}
+main {
+  width: 1150px;
+  margin: auto;
+  padding: 20px 0px;
+  display: flex;
+  height: calc(100vh - 80px);
+}
+.line {
+  margin-top: 50px;
+}
+.line .tag {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "nunito";
+  color: black;
+  margin-bottom: 20px;
+}
+.line h2 {
+  font-family: "nunito";
+  font-size: 50px;
+  font-weight: 800;
+  color: aqua;
+  margin-bottom: 20px;
+  line-height: 60px;
+}
+.line .deskripsi {
+  margin-bottom: 40px;
+  line-height: 20px;
+}
+.more {
+  background: aqua;
+  padding: 14px 17px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.more:hover {
+  background: blue;
+  color: white;
+  transition: 0.5s;
+}
+#home img {
+  width: 650px;
+  height: 400px;
+  height: auto;
+  object-fit: contain;
+}
+#about {
+  width: 1150px;
+  margin: auto;
+  display: flex;
+  padding: 80px 30px;
+}
+#about img {
+  height: 300px;
+  margin-right: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-right: 5px solid aqua;
+  border-left: 5px solid aqua;
+}
+#about img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "nunito";
+  color: black;
+  margin-bottom: 20px;
+}
+.title2 {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "nunito";
+  color: aqua;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+.visi-misi p {
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+.visi-misi .more {
+  display: inline-block;
+}
+#fasilitas {
+  width: 1150px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+#fasilitas .galeri {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.galeri .card {
+  width: 30%;
+  margin: 15px 0;
+}
+.galeri .card img {
+  width: 80%;
+  transition: 0.3s;
+  height: 300px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-right: 5px solid aqua;
+  border-left: 5px solid aqua;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.galeri .card p {
+  font-weight: 600;
+  color: blue;
+  margin-top: 10px;
+}
+.galeri .card img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  box-shadow: 5px 5px 30px black;
+}
+.zuara {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.zuara img {
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-right: 5px solid aqua;
+  border-left: 5px solid aqua;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.zuara p {
+  margin-top: 20px;
+  font-weight: 700;
+}
+.zuara img:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  box-shadow: 5px 5px 20px black;
+}
+#kontak {
+  width: 1150px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+#kontak .row {
+  display: flex;
+  justify-content: space-between;
+}
+#kontak .row .map {
+  width: 45%;
+  height: 350px;
+}
+#kontak .row .pesan {
+  width: 50%;
+  text-align: left;
+}
+#kontak .pesan .box {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+#kontak .pesan input,
+#kontak .pesan textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid aqua;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+}
+#kontak .pesan .message {
+  height: 100%;
+}
+#kontak .pesan textarea {
+  padding: 10px;
+  resize: none;
+}
+#kontak .pesan .btn-send button {
+  background: aqua;
+  padding: 14px 20px;
+  font-size: 17px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+#kontak .pesan .btn-send button:hover {
+  background-color: blue;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+footer {
+  background-color: rgb(38, 38, 98);
+  padding: 20px;
+  text-align: center;
+  margin-top: 70px;
+}
+footer .socials {
+  padding: 20px 0 15px;
+}
+footer .socials a {
+  margin: 10px;
+  font-size: 25px;
+  color: aqua;
+}
+footer .socials a:hover {
+  color: white;
+}
+footer .links {
+  margin-bottom: 15px;
+}
+footer .links a {
+  color: aqua;
+  padding: 15px;
+  font-weight: 500;
+}
+footer .links a:hover {
+  color: white;
+}
+footer .credit {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: aqua;
+}
+footer .credit a {
+  font-weight: 700;
+  color: white;
+}
+#prestasi {
+  text-align: center;
+}
+#kepalaskul {
+  width: 1150px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+#prestasi .per {
+  border: 1px solid aqua;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 40px;
+  padding: 20px;
+  border-left: 7px solid aqua;
+  border-right: 7px solid aqua;
+  background-color: lightgray;
+  cursor: pointer;
+}
+#prestasi .per:hover {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  transition-duration: 0.3s, 0.3s;
+  transition-timing-function: ease-in-out;
+}
+/*mobile*/
+@media screen and (max-width: 576px) {
+  .content {
+    width: 100%;
+    display: block;
+    padding-left: 12px;
+    margin: auto;
+    height: 110px;
+  }
+  .brand {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+  .menu {
+    padding-left: 4px;
+    padding-top: 10px;
+  }
+  .menu li {
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+  .menu li a {
+    font-size: 15px;
+  }
+  .menu .reg {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+  main {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    height: 680px;
+  }
+  .line {
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+  .line .tag {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .line h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .line .deskripsi {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .more {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+  #home img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  #about {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-top: 80px;
+    text-align: center;
+  }
+  #about img {
+    height: 200px;
+    margin: 0 auto 20px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .title2 {
+    font-size: 40px;
+  }
+  .visi-misi p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .visi-misi .more {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+  #fasilitas {
+    width: 100%;
+    margin-top: 70px;
+    padding: 10px;
+  }
+  #fasilitas .title {
+    margin-bottom: 10px;
+  }
+  .galeri .card {
+    width: 50%;
+  }
+  .galeri .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .galeri .card p {
+    font-size: 15px;
+  }
+  #prestasi {
+    margin-top: 70px;
+    padding: 10px;
+  }
+  #prestasi .title {
+    margin-bottom: 10px;
+  }
+  .zuara {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .zuara .card {
+    width: 50%;
+  }
+  .zuara .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .zuara .card p {
+    font-size: 15px;
+  }
+  #kepalaskul {
+    margin-top: 70px;
+    padding: 10px;
+  }
+  #kepalaskul .title {
+    margin-bottom: 10px;
+  }
+  .zuara {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .zuara .card {
+    width: 50%;
+  }
+  .zuara .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .zuara .card p {
+    font-size: 15px;
+  }
+  #kontak {
+    width: 100%;
+    padding: 10x;
+    margin-top: 50px;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  #kontak .row {
+    display: block;
+    width: 100%;
+  }
+  #kontak .row .map {
+    width: 100%;
+  }
+  #kontak .row .pesan {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #kontak .pesan .box {
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  #kontak .pesan input,
+  #kontak .pesan textarea {
+    font-size: 15px;
+  }
+  #kontak .pesan .message {
+    height: 100px;
+  }
+  #kontak .pesan .btn-send button {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+  footer .links a {
+    font-size: 15px;
+  }
+}
