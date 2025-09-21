@@ -370,7 +370,6 @@ footer .credit a {
   transition-duration: 0.3s, 0.3s;
   transition-timing-function: ease-in-out;
 }
-/*mobile*/
 @media screen and (max-width: 576px) {
   .content {
     width: 100%;
