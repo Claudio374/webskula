@@ -381,8 +381,9 @@ footer .credit a {
   }
   .logo img {
     display: none;
+  }
   .brand {
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 10px;
   }
   .menu {
@@ -394,11 +395,11 @@ footer .credit a {
     margin-right: 30px;
   }
   .menu li a {
-    font-size: 15px;
+    font-size: 8px;
   }
   .menu .reg {
     padding: 12px 15px;
-    font-size: 15px;
+    font-size: 8px;
   }
   main {
     width: 100%;
