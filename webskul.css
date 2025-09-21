@@ -379,6 +379,8 @@ footer .credit a {
     margin: auto;
     height: 110px;
   }
+  .logo img {
+    display: none;
   .brand {
     font-size: 45px;
     margin-bottom: 10px;
